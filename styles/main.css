@@ -178,6 +178,7 @@ button.about span {
     position: relative;
     height: 440px;
     width: 800px;
+    margin-top: -64px;
 }
 
 
@@ -201,17 +202,29 @@ button.about span {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    
     width: 100%;
     border-radius: 16px;
     padding: 40px 80px;
     gap: 24px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 100px;
 }
-
+.card-lg-animated .centered-text {
+    margin-top: 24px;
+}
 .card-lg-animated .centered-text h3, .card-lg-animated .centered-text p {
     color: var(--white);
 }
 
+svg.fixed {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    will-change: transform;
+    z-index: 4;
+}
 .card-lg-animated .centered-text p {
     width: 80%;
 }
@@ -220,4 +233,7 @@ button.about span {
     font-weight: 500;
     font-family: 'Graphik Trial', sans-serif;
     
+}
+.img-overlap {
+    height: 500px;
 }

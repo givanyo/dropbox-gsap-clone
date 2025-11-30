@@ -10,6 +10,7 @@
 }
 .container.md {
     padding-inline: 80px;
+    padding-block: 0;
 }
 
 .about.white {
