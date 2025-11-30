@@ -6,7 +6,6 @@
     padding-inline: 280px;
     background-color: var(--background-color);
     width: 100%;
-    min-height: 100vh;
 }
 
 .grid {
@@ -102,7 +101,7 @@ a span {
 }
 
 .call-to-action:hover span,
-.buttons a:hover span {
+.buttons a:hover svg {
     transform: translateX(4px);
 }
 
@@ -124,6 +123,12 @@ a span {
     font-weight: 600;
 }
 
+.centered-text p {
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: center;
+    width: 80%;
+}
 .mini-title {
     background-color: var(--dark-blue);
     color: var(--white);
@@ -135,11 +140,6 @@ a span {
     letter-spacing: -0.1px;
     display: inline-flex;
     align-items: center;
-}
-
-.centered-text p {
-    font-weight: 300;
-    line-height: 1.6;
 }
 
 button.about {

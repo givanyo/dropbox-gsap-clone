@@ -1,8 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const elementsAppear = gsap.utils.toArray(".appear-animation");
-const animatedVideos = gsap.utils.toArray(".video-and-img video");
-const animatedImages = gsap.utils.toArray(".video-and-img img");
+const overlapLg = gsap.utils.toArray(".overlap-lg");
+const overlapMd = gsap.utils.toArray(".overlap-md");
 
 elementsAppear.forEach(el => {
     gsap.from(el, {
@@ -14,7 +14,6 @@ elementsAppear.forEach(el => {
         scrub: 2,
         start: "top 100%",
         end: "top 50%",
-        markers: true
     }
 })
 })
@@ -25,23 +24,26 @@ gsap.from(".main-text", {
     duration: 2,
 })
 
-
-gsap.to(animatedVideos, {
-    y: 200,
-    scrollTrigger: {
-        trigger: animatedVideos,
-        scrub: 2,
-        start: "top center",
-        end: "bottom center"
-    }
+overlapLg.forEach(el => {
+    gsap.to(el, {
+        y: 200,
+        scrollTrigger: {
+            trigger: el,
+            scrub: 2,
+            start: "top center",
+            end: "bottom center"
+        }
+    })
 })
 
-gsap.to(animatedImages, {
-    y: 250,
-    scrollTrigger: {
-        trigger: animatedImages,
-        scrub: 2,
-        start: "top center",
-        end: "bottom 60%"
-    }
+overlapMd.forEach(el => {
+    gsap.to(el, {
+        y: 220,
+        scrollTrigger: {
+            trigger: el,
+            scrub: 2,
+            start: "top center",
+            end: "bottom 60%"
+        }
+    })
 })
