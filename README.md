@@ -1,6 +1,6 @@
 # Dropbox GSAP Clone
 
-Clone da Homepage do [Dropbox](https://www.dropbox.com/pt_BR/). O objetivo é praticar a criação de animações mais complexas com GSAP e ScrollTrigger.
+Clone da Homepage do [Dropbox](https://www.dropbox.com/pt_BR/). O objetivo do projeto é praticar a criação de animações mais complexas usando GSAP e ScrollTrigger.
 
 Você pode acessar o projeto aqui: [Dropbox GSAP Clone](https://givanyo.github.io/dropbox-gsap-clone/)
 
@@ -11,3 +11,6 @@ Você pode acessar o projeto aqui: [Dropbox GSAP Clone](https://givanyo.github.i
 - JavaScript
 - GSAP
 - ScrollTrigger
+
+## Status do projeto
+Em andamento
