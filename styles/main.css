@@ -127,7 +127,7 @@ a span {
     font-weight: 300;
     line-height: 1.6;
     text-align: center;
-    width: 80%;
+    width: 90%;
 }
 .mini-title {
     background-color: var(--dark-blue);
@@ -181,17 +181,15 @@ button.about span {
 
 
 .overlap-lg {
-    position: absolute;
+    position: relative;
     margin-top: 40px;
     height: 480px;
     width: 800px;
     z-index: 2;
-    left: 0;
 }
 
 .overlap-md {
     height: 440px;
-    position: absolute;
+    position: relative;
     z-index: 1;
-    right: -200px;
 }
