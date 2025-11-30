@@ -3,6 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 const elementsAppear = gsap.utils.toArray(".appear-animation");
 const overlapLg = gsap.utils.toArray(".overlap-lg");
 const overlapMd = gsap.utils.toArray(".overlap-md");
+const securityCards = gsap.utils.toArray(".card-sm")
 
 gsap.from(".main-text", {
     y: 100,
@@ -64,6 +65,20 @@ overlapMd.forEach(el => {
             scrub: 2,
             start: "top 140%",
             end: "center 100%"
+        }
+    })
+})
+
+securityCards.forEach(el => {
+    gsap.from(el, {
+        filter: "blur(3px)",
+        scale: 0.9,
+        opacity: 0.8,
+        toggleActions: "play none none none",
+        scrollTrigger: {
+            trigger: el,
+            start: "top 80%",
+            end: "center 80%"
         }
     })
 })

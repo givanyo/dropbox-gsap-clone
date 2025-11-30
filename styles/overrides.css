@@ -9,7 +9,7 @@
     background-color: var(--red)
 }
 .container.md {
-    padding-inline: 80px;
+    padding-inline: 48px;
     padding-block: 0;
 }
 

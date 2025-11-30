@@ -1,5 +1,5 @@
 :root {
-    --black-gradient: linear-gradient(to left, #272a2e, #25272c);
+    --black-gradient: linear-gradient(to bottom, #272a2e, #25272c);
     --blue-gradient: linear-gradient(hsl(217, 92%, 54%), hsl(217, 100%, 45%));
     --blue-gradient-hover: linear-gradient(hsl(217, 92%, 49%), hsl(217, 100%, 40%));
     --border-color: hsl(36, 24%, 90%);
@@ -22,6 +22,7 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 button {

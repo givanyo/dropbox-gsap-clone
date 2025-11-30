@@ -208,7 +208,7 @@ button.about span {
     gap: 24px;
     margin: 0 auto;
     position: relative;
-    padding-bottom: 100px;
+    overflow-x: hidden;
 }
 .card-lg-animated .centered-text {
     margin-top: 24px;
@@ -236,4 +236,64 @@ svg.fixed {
 }
 .img-overlap {
     height: 500px;
+}
+.card-wrapper {
+    display: flex;
+    margin-top: 96px;
+}
+.card-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 24px;
+    height: 250px;
+}
+.card-sm {
+    display: flex;
+    justify-self: flex-end;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: hsl(228, 8%, 20%);
+    height: 100%;
+    border-radius: 16px;
+    width: 600px;
+    padding: 8px 8px;
+    gap: 24px;
+}
+
+.card-sm h6 {
+    color: #ca2f79;
+    font-size: 14px;
+    font-family: 'Graphik Trial', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.card-sm p, .card-sm h4, .card-sm a {
+    color: var(--white);
+    text-align: justify;
+}
+
+.card-sm a {
+    text-decoration: underline;
+    justify-self: flex-end;
+}
+.card-sm img {
+    height: 100%;
+    border-radius: 24px;
+}
+
+.card-text {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    padding-block: 16px;
+    gap: 8px;
+    height: 100%;
+    padding-right: 16px;
+}
+
+.filler {
+    width: 600px;
+    height: 250px;
+    background-color: transparent;
 }
