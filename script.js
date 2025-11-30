@@ -52,7 +52,6 @@ overlapLg.forEach(el => {
             scrub: 2,
             start: "top 140%",
             end: "center 100%",
-            markers: true
         }
     })
 })
