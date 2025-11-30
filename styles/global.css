@@ -1,0 +1,82 @@
+:root {
+    --blue-gradient: linear-gradient(hsl(217, 92%, 54%), hsl(217, 100%, 45%));
+    --blue-gradient-hover: linear-gradient(hsl(217, 92%, 49%), hsl(217, 100%, 40%));
+    --border-color: hsl(36, 24%, 90%);
+    --text-color: hsl(0, 0%, 40%);
+    --background-color: #f7f5f2;
+    --white: #fff;
+    --black: #080808;
+    --dark-blue: #283750;
+    --orange: #be4b0a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px var(--border-color);
+    height: 72px;
+    padding-inline: 32px;
+    gap: 2rem;
+    position: fixed;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 100;
+}
+
+li, .menu li button {
+    list-style: none;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    font-weight: 400;
+    min-width: fit-content;
+}
+
+li img {
+    width: 48px;
+    height: 48px;
+}
+
+header svg {
+    transform: translateY(15%);
+}
+.main-text span svg {
+    transform: translateY(12%);
+}
+.about span svg {
+    transform: translateY(2%);
+}
+
+section {
+    position: absolute;
+    z-index: 3;
+}

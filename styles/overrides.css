@@ -1,0 +1,11 @@
+.orange-bg {
+    background-color: var(--orange);
+}
+
+.white-bg {
+    background-color: var(--white);
+}
+
+.flex-row {
+    flex-direction: row;
+}
