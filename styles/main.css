@@ -155,6 +155,7 @@ button.about {
     min-width: 20%;
     padding: 0;
     transition: all 0.3s ease;
+    font-size: 16px;
 }
 svg {
     transition: all 0.3s ease;
@@ -192,4 +193,31 @@ button.about span {
     height: 440px;
     position: relative;
     z-index: 1;
+}
+
+.card-lg-animated {
+    background-image: var(--black-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: 100%;
+    border-radius: 16px;
+    padding: 40px 80px;
+    gap: 24px;
+}
+
+.card-lg-animated .centered-text h3, .card-lg-animated .centered-text p {
+    color: var(--white);
+}
+
+.card-lg-animated .centered-text p {
+    width: 80%;
+}
+.card-lg-animated .centered-text h3 {
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Graphik Trial', sans-serif;
+    
 }

@@ -8,6 +8,16 @@
 .red-bg {
     background-color: var(--red)
 }
-.flex-row {
-    flex-direction: row;
+.container.md {
+    padding-inline: 80px;
+}
+
+.about.white {
+    color: var(--white);
+    border: solid 2px var(--white);
+}
+
+a.white {
+    color: var(--white);
+
 }
