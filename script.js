@@ -2,14 +2,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 const elementsAppear = gsap.utils.toArray(".appear-animation");
 const overlapLg = gsap.utils.toArray(".overlap-lg");
+
 const overlapMd = gsap.utils.toArray(".overlap-md");
-const securityCards = gsap.utils.toArray(".card-sm")
+const securityCards = gsap.utils.toArray(".card-sm");
 
 gsap.from(".main-text", {
     y: 100,
     opacity: 0,
     duration: 2,
-})
+});
+
 gsap.from(".card-lg-animated", {
     width: "80%",
     scrollTrigger: {
@@ -18,7 +20,7 @@ gsap.from(".card-lg-animated", {
         start: "top 100%",
         end: "center 100%",
     }
-})
+});
 
 gsap.from(".img-overlap", {
     y: 150,
@@ -28,7 +30,8 @@ gsap.from(".img-overlap", {
         start: "center 100%",
         end: "bottom 100%",
     }
-})
+});
+
 elementsAppear.forEach(el => {
     gsap.from(el, {
     y: 100,
@@ -41,7 +44,7 @@ elementsAppear.forEach(el => {
         end: "top 50%",
     }
 })
-})
+});
 
 
 
@@ -55,7 +58,7 @@ overlapLg.forEach(el => {
             end: "center 100%",
         }
     })
-})
+});
 
 overlapMd.forEach(el => {
     gsap.from(el, {
@@ -67,12 +70,12 @@ overlapMd.forEach(el => {
             end: "center 100%"
         }
     })
-})
+});
 
 securityCards.forEach(el => {
     gsap.from(el, {
         filter: "blur(3px)",
-        scale: 0.9,
+        scale: 0.2,
         opacity: 0.8,
         toggleActions: "play none none none",
         scrollTrigger: {
@@ -81,4 +84,5 @@ securityCards.forEach(el => {
             end: "center 80%"
         }
     })
-})
+});
+

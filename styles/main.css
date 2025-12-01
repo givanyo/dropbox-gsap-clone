@@ -136,7 +136,7 @@ a span {
     border-radius: 64px;
     padding-inline: 16px;
     padding-block: 6px;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: -0.1px;
     display: inline-flex;
     align-items: center;
@@ -271,6 +271,7 @@ svg.fixed {
 .card-sm p, .card-sm h4, .card-sm a {
     color: var(--white);
     text-align: justify;
+    font-family: 'Graphik Trial', sans-serif;
 }
 
 .card-sm a {
@@ -296,4 +297,25 @@ svg.fixed {
     width: 600px;
     height: 250px;
     background-color: transparent;
+}
+
+.carousel {
+    overflow-x: hidden;    
+    display: flex;
+    gap: 200px;
+}
+
+.text-and-carousel p {
+    text-align: center;
+    color: var(--background-color);
+    margin: 32px 0;
+}
+
+.text-grid h2 {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 32px;
+    color: hsl(0, 0%, 35%);
+    font-weight: 500;
 }
