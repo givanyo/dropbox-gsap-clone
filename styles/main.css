@@ -376,3 +376,58 @@ svg.fixed {
     letter-spacing: 0.2px;
     width: 100%;
 }
+.cards-row {
+    display: flex;
+    gap: 24px;
+    margin: 0 auto;
+}
+.row-card {
+    display: flex;
+    flex-direction: column;
+    height: 488px;
+    background-color: var(--white);
+    padding: 8px; 
+    border-radius: 16px;
+    width: 344px;
+    padding-top: 10px;  
+    
+}
+
+.row-card img {
+    object-fit: cover;
+    height: 144px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.row-card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    line-height: 140%;
+    position: relative;
+    height: 100%;
+}
+
+.row-card-content h6, .row-card-content p {
+    font-size: 14px;
+}
+
+.row-card-content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d0d0d;
+}
+
+.row-card-content p {
+    font-size: 14px;
+}
+
+.row-card-content a {
+    position: absolute;
+    bottom: 24px;
+    font-weight: 600;
+    color: #0d0d0d;
+    text-decoration: underline;
+}
