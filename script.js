@@ -5,6 +5,7 @@ const overlapLg = gsap.utils.toArray(".overlap-lg");
 
 const overlapMd = gsap.utils.toArray(".overlap-md");
 const securityCards = gsap.utils.toArray(".card-sm");
+const cards = gsap.utils.toArray(".card");
 
 gsap.from(".main-text", {
     y: 100,
@@ -85,4 +86,32 @@ securityCards.forEach(el => {
         }
     })
 });
+gsap.from(".cards-grid", {
+    scale: 0.75,
+    filter: "blur(15px)",
+    duration: 0.3,
+    scrollTrigger: {
+        toggleActions: "play none none none",
+        trigger: ".cards-grid",
+        start: "top 80%",
+        end: "center 80%",
+    }
+});
 
+gsap.from(cards, {
+    scale: 0.9,
+    opacity: 0,
+    y: 30,
+    duration: 0.6,
+    stagger: {
+        each: 0.1,
+        grid: [3, 2],
+        from: "start", 
+        ease: "power1.inOut"
+    },
+    scrollTrigger: {
+        trigger: cards[0],
+        start: "top 80%",
+        toggleActions: "play none none none"
+    }
+});
