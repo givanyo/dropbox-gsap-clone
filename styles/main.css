@@ -208,3 +208,18 @@ button.about span {
 }
 
 
+.see-more, .note {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    margin-top: 104px;
+}
+.see-more {
+    color: #1d72fc;
+    font-weight: 500;
+    cursor: pointer;
+}
+.note {
+    text-align: justify;
+    font-weight: 400;
+}
