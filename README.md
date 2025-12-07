@@ -13,4 +13,4 @@ Você pode acessar o projeto aqui: [Dropbox GSAP Clone](https://givanyo.github.i
 - ScrollTrigger
 
 ## Status do projeto
-Em andamento
+Finalizado
